@@ -9,16 +9,20 @@ const handleMovie = async (movieId, server, res, parser) => {
         const movieResponse = await serverInstance.movie(movieId);
         const response = parser ? parser(movieResponse) : movieResponse
 
-        res.send({
+        res
+        .status(200)
+        .send({
             ...response,
             server: serverName,
-        }, 200);
+        });
     } catch(error) {
         console.error('Error: ', error);
-        res.send({
+        res
+        .status(400)
+        .send({
             message: ERRORS.FETCHING_MOVIE,
             server: serverName,
-        }, 400);
+        });
     }
 }
 
