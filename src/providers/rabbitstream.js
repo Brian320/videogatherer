@@ -684,8 +684,9 @@ async function stream(xrax, MEGA = 0) {
 
       let str = btoa(String.fromCharCode.apply(null, num));
       var real = Z(encrypted, str);
+      resp_json.sources = real;
 
-      return real;
+      return resp_json;
     }
 
     return stream(xrax);
