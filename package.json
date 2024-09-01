@@ -16,7 +16,6 @@
     "install": "^0.13.0",
     "node-fetch": "^3.3.2",
     "npm": "^10.8.2",
-    "opensubtitles-api": "^5.1.2",
     "puppeteer": "^22.15.0",
     "puppeteer-core": "^22.15.0",
     "puppeteer-extra": "^3.3.6",

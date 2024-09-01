@@ -4,7 +4,6 @@ import parseSourcesWithSubtitles from "./utils/parseSourcesWithSubtitles.js";
 import handleMovie from "./utils/handleMovie.js";
 import session from "express-session";
 import dotenv from "dotenv";
-// import { handleFetchSubtitlesByMovie, loginOpenSubtitles } from "./sources/opensubtitles.js";
 
 const env = dotenv.config().parsed;
 const app = express();
@@ -24,7 +23,7 @@ app.get('/', async (req, res) => {
     res.send('Welcome to my server!');
 });
 
-app.get('/movie/vidsrc/:movieId', async ({ params, ...req }, res) => {
+app.get('/movie/vidsrc/:movieId', async ({ params }, res) => {
     const { movieId } = params;
     handleMovie(movieId, SERVERS.VIDSRC, res);
     // await handleFetchSubtitlesByMovie(movieId, req);
