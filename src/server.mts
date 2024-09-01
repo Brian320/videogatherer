@@ -19,7 +19,7 @@ app.get('/', async (req, res) => {
     // if (!req.session.isLoggedIn) {
     //     await loginOpenSubtitles(req);
     // }
-    console.log({isLoggedIn: req.session.isLoggedIn, os_token: req.session.os_token});
+    // console.log({isLoggedIn: req.session.isLoggedIn, os_token: req.session.os_token});
     res.send('Welcome to my server!');
 });
 
@@ -46,7 +46,7 @@ app.get('/movie/myflixerz/:movieId', async ({ params }, res) => {
 
 app.get('/movie/watchseriesx/:movieId', async ({ params }, res) => {
     const { movieId } = params;
-    handleMovie(movieId, SERVERS.WATCHSERIESX, res);
+    handleMovie(movieId, SERVERS.WATCHSERIES, res);
 });
 
 app.get('/movie/aniwave/:movieId', async ({ params }, res) => {

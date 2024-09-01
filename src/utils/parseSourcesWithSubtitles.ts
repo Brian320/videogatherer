@@ -1,7 +1,7 @@
 import parseSubtitles from "./parseSubtitles.js";
 
 
-const parseSourcesWithSubtitles = (response) => {
+const parseSourcesWithSubtitles = (response: any) => {
     const { subtitle, tracks } = response;
     const subtitlesSource = subtitle ?? tracks;
     if (subtitlesSource) {

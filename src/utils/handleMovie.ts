@@ -2,7 +2,7 @@ import { ERRORS } from "../constants/messages.js";
 import { SERVERS } from "../constants/servers.js";
 import handleServer from "./handleServers.js";
 
-const handleMovie = async (movieId, server, res, parser) => {
+const handleMovie = async (movieId: string, server: string, res: any, parser?: any) => {
     const serverInstance = handleServer(server);
     const serverName = Object.values(SERVERS).find(s => s === server);
     try {

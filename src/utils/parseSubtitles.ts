@@ -1,9 +1,9 @@
 import filterSubtitlesByLang from "./filterSubtitlesByLang.js";
 
-const parseSubtitles = (subtitles, shouldFilterSubtitles) => {
+const parseSubtitles = (subtitles: any, shouldFilterSubtitles: boolean) => {
     const isString = typeof subtitles === 'string';
     const subtitlesArray = isString ? subtitles.split(',') : subtitles;
-    const subtitlesSource = isString ? subtitlesArray.subtitlesArray.map(item => {
+    const subtitlesSource = isString ? subtitlesArray.map((item: string) => {
         // Encontrar la posición del primer corchete cuadrado
         const bracketIndex = item.indexOf(']');
         
@@ -19,7 +19,7 @@ const parseSubtitles = (subtitles, shouldFilterSubtitles) => {
         return filteredSubtitles;
     }
 
-    return result;
+    return subtitlesSource;
 };
 
 export default parseSubtitles;

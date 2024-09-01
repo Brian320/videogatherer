@@ -1,7 +1,7 @@
 export const SERVERS = {
     ANIWAVE: 'aniwave',
     VIDSRC: 'vidsrc',
-    WATCHSERIESX: 'watchseriesx',
+    WATCHSERIES: 'watchseries',
     MYFILXERZ: 'myflixerz',
     FLIXHQ: 'flixhq',
     VIDSRCME: 'vidsrcme',
