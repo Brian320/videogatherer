@@ -3,8 +3,8 @@
   "scripts": {
     "build": "tsc",
     "dev": "node --loader ts-node/esm src/server.mts --watch *.ts",
-    "start": "node dist/main.js",
-    "keys": "node dist/getkeys.js",
+    "start": "node src/main.js",
+    "keys": "node --loader ts-node/esm src/getkeys.ts",
     "lint": "eslint --ignore-pattern src/providers/rabbitstream.js src",
     "fix": "eslint --fix --ignore-pattern src/providers/rabbitstream.js src"
   },
