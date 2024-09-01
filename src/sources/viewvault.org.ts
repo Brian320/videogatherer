@@ -58,5 +58,5 @@ async function test() {
   }
 }
 
-export const FlixHQ: Source = { HOST, ALT_HOSTS, SERVERS, ID, movie, tv, test };
+export const ViewVault: Source = { HOST, ALT_HOSTS, SERVERS, ID, movie, tv, test };
 

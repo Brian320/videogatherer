@@ -2,7 +2,7 @@
   "type": "module",
   "scripts": {
     "build": "tsc",
-    "dev": "node --loader ts-node/esm src/server.mts --watch",
+    "dev": "node --loader ts-node/esm src/server.mts --watch *.ts",
     "start": "node dist/main.js",
     "keys": "node dist/getkeys.js",
     "lint": "eslint --ignore-pattern src/providers/rabbitstream.js src",

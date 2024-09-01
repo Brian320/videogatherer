@@ -31,7 +31,27 @@ app.get('/movie/vidsrc/:movieId', async ({ params }, res) => {
 
 app.get('/movie/vidsrcme/:movieId', async ({ params }, res) => {
     const { movieId } = params;
-    handleMovie(movieId, SERVERS.VIDSRCME, res, parseSourcesWithSubtitles);
+    handleMovie(movieId, SERVERS.VIDSRC_ME, res, parseSourcesWithSubtitles);
+});
+
+app.get('/movie/vidsrccc/:movieId', async ({ params }, res) => {
+    const { movieId } = params;
+    handleMovie(movieId, SERVERS.VIDSRC_CC, res, parseSourcesWithSubtitles);
+});
+
+app.get('/movie/vidsrcpro/:movieId', async ({ params }, res) => {
+    const { movieId } = params;
+    handleMovie(movieId, SERVERS.VIDSRC_PRO, res, parseSourcesWithSubtitles);
+});
+
+app.get('/movie/vidstreamto/:movieId', async ({ params }, res) => {
+    const { movieId } = params;
+    handleMovie(movieId, SERVERS.VIDSTREAM_TO, res, parseSourcesWithSubtitles);
+});
+
+app.get('/movie/viewvault/:movieId', async ({ params }, res) => {
+    const { movieId } = params;
+    handleMovie(movieId, SERVERS.VIEWVAULT_ORG, res, parseSourcesWithSubtitles);
 });
 
 app.get('/movie/flixhq/:movieId', async ({ params }, res) => {
