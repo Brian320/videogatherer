@@ -10,8 +10,13 @@
     "@babel/traverse": "^7.25.3",
     "crypto-js": "^4.2.0",
     "deobfuscator": "^2.4.5",
+    "dotenv": "^16.4.5",
     "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "install": "^0.13.0",
     "node-fetch": "^3.3.2",
+    "npm": "^10.8.2",
+    "opensubtitles-api": "^5.1.2",
     "puppeteer": "^22.15.0",
     "puppeteer-core": "^22.15.0",
     "puppeteer-extra": "^3.3.6",
@@ -24,5 +29,11 @@
     "eslint": "^9.9.0",
     "globals": "^15.9.0",
     "jsdom": "^24.1.1"
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "node": true
+    }
   }
 }
