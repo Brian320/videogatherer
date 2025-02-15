@@ -1,6 +1,6 @@
 # VideoGatherer 
 
-Scraping movies and tv series from:
+Scraping movies and tv series from :
 - flixhq.to 
 - myflixerz.to
 - vidsrc.net
