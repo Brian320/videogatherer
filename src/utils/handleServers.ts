@@ -9,6 +9,7 @@ import { VidsrcCC } from "../sources/vidsrc.cc.js";
 import { VidsrcPro } from "../sources/vidsrc.pro.js";
 import { VidStream } from "../sources/vidstream.to.js";
 import { ViewVault } from "../sources/viewvault.org.js";
+import { EmbedSu } from "../sources/embed.su.js";
 
 const handleServer = (server: string) => {
     switch(server) {
@@ -32,6 +33,8 @@ const handleServer = (server: string) => {
             return ViewVault;
         case SERVERS.WATCHSERIES:
             return Watchseries;
+        case SERVERS.EMBED_SU:
+            return EmbedSu;
         default:
             return null;
     }

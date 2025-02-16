@@ -9,4 +9,5 @@ export const SERVERS = {
     VIDSTREAM_TO: 'vidstream.to',
     VIEWVAULT_ORG: 'viewvault.org',
     WATCHSERIES: 'watchseries',
+    EMBED_SU: 'embed.su',
 };
