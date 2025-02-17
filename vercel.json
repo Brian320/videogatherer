@@ -1,0 +1,19 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "src/server.mts",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "src/server.mts"
+      }
+    ],
+    "buildCommand": "npm run keys && npm run build",
+    "env": {
+      "NODE_ENV": "production"
+    }
+  }
